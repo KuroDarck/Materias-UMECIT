@@ -1,0 +1,85 @@
+@import url(./Normalize.css);
+.Cabesera{
+	width: 100%;
+	height: 150px;
+	background-color: #00ff0dd5;
+	padding: 5% 10%;
+}
+
+#Titulo{
+	color: blueviolet;
+	text-align:center;
+	line-height: 1rem;
+}
+
+.form-dimension{
+	width: 70%;
+	height: 60%;
+	margin: 2% 15%;
+	padding: 2% 5%;
+	border: 2px solid #3cff00;
+
+	background-color: #00ff0d80;
+
+}
+.Recolectar{
+	color: blue;
+	font-size: 1.5rem;
+	
+}
+
+
+#hTmL{
+	background: burlywood;
+	line-height: 10px;
+	text-indent: 40px;
+
+}
+
+#pHp{
+	background: burlywood;
+	line-height: numer=2;
+	color: blue;
+	font-size: "16px";
+}
+
+#PHp{
+	background: rosybrown ;
+	text-indent: 40px;
+}
+#pHP{
+	color: blueviolet;
+	text-align:center;
+
+}
+.dVolver{
+	justify-content: center;
+}
+.inte{
+	text-align: right;
+	color: blue;
+	font-size: "16px";
+}
+.img-conte{
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	margin: 3% 5%;
+
+}
+.img{
+	width:100%;
+}
+
+.integrantes{
+	width: 300px;
+	height: 250px;
+	position: absolute;
+	
+	margin: 3% 60%;
+
+
+}
+.dVolver{
+	margin: 0% 45%;
+}

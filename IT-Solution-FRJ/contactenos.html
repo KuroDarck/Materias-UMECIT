@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./contactenos.css" />
+    <link rel="icon" href="./Imagenes/LogoItSolution.png" />
+    <title>contactenos</title>
+  </head>
+  <body>
+    <header class="head">
+      <img src="./Imagenes/LogoItSolution.png" alt="LogoIT" class="img" />
+      <h2 class="Rption">
+        <a class="Label" href="./index.html">INICIO</a>
+        <a class="Label" href="./servicios.html">SERVICIOS</a>
+        <a class="Label" href="./nosotros.html">NOSOTROS</a>
+        <a class="Label" href="./contactenos.html">CONTACTENOS</a>
+      </h2>
+    </header>
+    <img src="./Imagenes/ItSolucion.jpg" alt="Soluciones It" class="fondo" />
+
+    <form action="contactenos.php" method="POST">
+      <div id="forma">
+        <h1>
+          <img
+            src="./Imagenes/ContactanosIt.png"
+            alt="Contactenos"
+            id="fondo2"
+          />
+        </h1>
+        <h2 class="aline">
+          <input
+            type="text"
+            name="nombre"
+            placeholder="Nombre y Apellido"
+            class="caja"
+            required
+          />
+        </h2>
+        <h2 class="aline">
+          <input
+            type="text"
+            name="telefono"
+            placeholder="Telefono"
+            class="caja"
+            required
+          />
+        </h2>
+        <h2 class="aline">
+          <input
+            type="email"
+            name="email"
+            placeholder="Correo Electrinico"
+            class="caja"
+            required
+          />
+        </h2>
+        <h2 class="aline">
+          <input
+            type="text"
+            name="mensaje"
+            minlength="20"
+            maxlength="200"
+            placeholder="Mensaje o Consulta"
+            class="caja"
+            required
+          />
+        </h2>
+        <h2 class="aline">
+          <button type="button" class="button" id="Rposit">
+            <a href="./index.html">Back</a></button
+          ><input type="Submit" class="button" id="Lposit" />
+        </h2>
+      </div>
+    </form>
+    <footer id="foot">
+      <h1 class="follow">Síguenos</h1>
+
+      <a href="https://www.facebook.com/"
+        ><img src="./Imagenes/ItSolucionFacebook.png" class="imgb" id="posimg1"
+      /></a>
+
+      <a href="https://www.instagram.com/"
+        ><img
+          src="./Imagenes/ItSolucionInstagram.png"
+          class="imgb"
+          id="posimg2"
+      /></a>
+
+      <a href="https://twitter.com/"
+        ><img src="./Imagenes/ItSolucionTwitter.png" class="imgb" id="posimg2"
+      /></a>
+    </footer>
+  </body>
+</html>
