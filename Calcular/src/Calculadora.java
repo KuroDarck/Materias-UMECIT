@@ -2,8 +2,11 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.Font;
 import java.awt.event.*;
-import java.math.*;
+import java.math.RoundingMode;
 import java.text.DecimalFormat;
+
+
+
 
 public class Calculadora implements ActionListener {
 
@@ -12,25 +15,28 @@ public class Calculadora implements ActionListener {
     JButton[] Number=new JButton[10]; // Creacion de el array Number[]
     JButton[] Operators=new JButton[10]; // Creacion de el array Operatos[]
 
+
     Font styleFont=new Font("Times New Roman", Font.ITALIC, 25);
 
     JButton sumbutton,restButton,multButton,divButton,equButton,dotButton,clsButton,delButton,avrButton,negaButton;
     JPanel panel;
-
     double dato1=0,dato2=0, resultado=0;
     char signo;
 
     Calculadora(){ // constructor de la clase calculadora
 
     frame = new JFrame("Calculator RHM");
-    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setDefaultCloseOperation(JFrame.HIDE_ON_CLOSE);
     frame.setSize(400,500);
+    frame.setResizable(false);
+
     frame.setLayout(null);
     entrada=new JTextField();
     entrada.setFont(styleFont);
     entrada.setBackground(Color.DARK_GRAY);
     entrada.setForeground(Color.RED);
     entrada.setBounds(40,50,300,40);
+
 
     // Creacion de los Botones de Opreraciones
     sumbutton=new JButton("+");
@@ -173,17 +179,19 @@ public class Calculadora implements ActionListener {
             dato2=Double.parseDouble(entrada.getText());
 
             //Switch de decicion de operaciones
-            switch (signo){
-                case '+': resultado=dato1+dato2; break;
-                case '-': resultado=dato1-dato2; break;
-                case 'x': resultado=dato1*dato2; break;
-                case '/':resultado=dato1/dato2;break;
-                case '%':String porce="";
-                         int dato0=(int)dato2;
-                         porce=toString(dato0);
-                         dato2=Double.parseDouble(porce);
-                         resultado=dato1%dato2;break;
+            switch (signo) {
+                case '+' -> resultado = dato1 + dato2;
+                case '-' -> resultado = dato1 - dato2;
+                case 'x' -> resultado = dato1 * dato2;
+                case '/' -> resultado = dato1 / dato2;
+                case '%' -> {
 
+                    int dato0 = (int) dato2;
+                    String porce = toString(dato0);
+                    dato2 = Double.parseDouble(porce);
+                    resultado = dato1 * dato2;
+                }
+                default -> throw new IllegalStateException("Unexpected value: " + signo);
             }
 
             //Mensaje de Error a divicion por 0
@@ -224,12 +232,17 @@ public class Calculadora implements ActionListener {
 }
     //toString sobrescrito para trasformado a decimal un entero
     private String toString(int valu) {
-        return "0."+String.valueOf(valu);
+        if (valu<=9) {
+            return "0.0" + valu;
+        }else {
+            return "0." + valu;
+        }
+
     }
 
     // funcion de redondeo a dos decimales
     private static String redondear(double value) {
-        DecimalFormat df = new DecimalFormat("0.00");  df.setRoundingMode(RoundingMode.HALF_UP);
+        DecimalFormat df = new DecimalFormat("0.00");  df.setRoundingMode(RoundingMode.FLOOR);
         return df.format(value);
     }
 
