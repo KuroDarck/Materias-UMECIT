@@ -79,7 +79,7 @@ public class Calculadora implements ActionListener {
         Number[i].setFont(styleFont);
     }
 
-    panel=new JPanel(); //creacion del nuevo panel o grid
+    panel=new JPanel(); //creacion del nuevo panel
     panel.setBounds(40,110,300,300); // pocicionamiento del grid o panel
     panel.setLayout(new GridLayout(5,4,10,10)); //dimencionamiento del grid
     panel.setBackground(Color.darkGray); // color de fondo del grid
