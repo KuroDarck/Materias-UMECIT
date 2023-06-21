@@ -16,7 +16,7 @@ Licenciatura en Sistemas de Programación / salida intermedia de Técnico en Sis
 - 🖥️Todos Los 📚Ejercicios realisados con C++
 
 ### 📲 Lenguaje de Programacion II 💻!!
-- 🏵💻3 Interfaces con Visual Basic 
+- 3️⃣ Interfaces 💻 con Visual Basic 
 
 ### 📲 Lenguaje de Programacion III 💻!!
 - 🏵️P1.
