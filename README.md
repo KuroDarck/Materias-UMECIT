@@ -13,18 +13,10 @@ Licenciatura en Sistemas de Programación / salida intermedia de Técnico en Sis
   <summary>®️ Proyectos realizados para las diferentes materias. ⚙️</summary>
 
 ### 📲 Lenguaje de Programacion I 💻!!
-- 🏵️P1.
-- ✅P2
-- 💱P3
-- 📝P4
-- 🗂️P5
+- 🖥️Todos Los 📚Ejercicios realisados con C++
 
 ### 📲 Lenguaje de Programacion II 💻!!
-- 🏵️P1.
-- ✅P2
-- 💱P3
-- 📝P4
-- 🗂️P5
+- 🏵💻3 Interfaces con Visual Basic 
 
 ### 📲 Lenguaje de Programacion III 💻!!
 - 🏵️P1.
